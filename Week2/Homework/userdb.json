@@ -1,0 +1,74 @@
+[
+	{
+		"author_no" : 1,
+		"author_name" : "Stephen King",
+		"university" : "Maine",
+		"date_of_birth" : "1947-09-21",
+		"h_index" : 6,
+		"gender" : "M",
+		"mentor" : 3
+	},
+	{
+		"author_no" : 2,
+		"author_name" : "Barry Simon",
+		"university" : "Harvard",
+		"date_of_birth" : "1946-04-16",
+		"h_index" : 113,
+		"gender" : "M",
+		"mentor" : 5
+	},
+	{
+		"author_no" : 3,
+		"author_name" : "Margaret Atwood",
+		"university" : "Harvard",
+		"date_of_birth" : "1939-11-18",
+		"h_index" : 7,
+		"gender" : "F",
+		"mentor" : 2
+	},
+	{
+		"author_no" : 4,
+		"author_name" : "Gilbert Laporte",
+		"university" : "McGill, Lancaster",
+		"date_of_birth" : "1933-07-21",
+		"h_index" : 112,
+		"gender" : "M",
+		"mentor" : 4
+	},
+	{
+		"author_no" : 5,
+		"author_name" : "Geoff Ryman",
+		"university" : "UCLA",
+		"date_of_birth" : "1951-05-09",
+		"h_index" : 6,
+		"gender" : "M",
+		"mentor" : 3
+	},
+	{
+		"author_no" : 6,
+		"author_name" : "Ingrid Daubechies",
+		"university" : "Vrije",
+		"date_of_birth" : "1954-08-17",
+		"h_index" : 63,
+		"gender" : "F",
+		"mentor" : 2
+	},
+	{
+		"author_no" : 7,
+		"author_name" : "Orson Scott Card",
+		"university" : "Utah",
+		"date_of_birth" : "1951-08-24",
+		"h_index" : 12,
+		"gender" : "M",
+		"mentor" : 7
+	},
+	{
+		"author_no" : 8,
+		"author_name" : "Jean Bourgain",
+		"university" : "Vrije",
+		"date_of_birth" : "1954-02-28",
+		"h_index" : 97,
+		"gender" : "M",
+		"mentor" : 1
+	}
+]
