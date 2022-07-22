@@ -1,10 +1,10 @@
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-  host: "localhost",
-  user: "hyfuser",
-  password: "hyfpassword",
-  database: "userdb",
+  host: 'localhost',
+  user: 'hyfuser',
+  password: 'hyfpassword',
+  database: 'userdb',
 });
 
 const execQuery = (query) => {
@@ -14,7 +14,7 @@ const execQuery = (query) => {
   });
 };
 
-const createAuthorsResearchTable = `CREATE TABLE IF NOT EXISTS author_research_Papers(
+const create_Authors_Research_Table = `CREATE TABLE IF NOT EXISTS author_research_Papers(
   author_no INT NOT NULL,
   paper_id INT NOT NULL, 
   FOREIGN KEY(author_no) REFERENCES authors(author_no), 
@@ -56,9 +56,9 @@ INSERT INTO author_research_Papers
 ('Kurt & Courtney', 'XG Technology, Inc', '2019/10/28'),
 ('Holidays by the Sea (Ni à vendre ni à louer)', 'Manitex International, Inc.', '2018/11/22'),
 ('Carry On, Constable', 'Wells Fargo & Company', '2017/05/28')
-`
+`;
 
-const INSERT_INTO_JOINT_TABLE = `
+const Insert_Into_Joint_Table = `
 INSERT INTO author_research_Papers (author_no, paper_id)
   VALUES
   (1, 1),
@@ -93,10 +93,10 @@ INSERT INTO author_research_Papers (author_no, paper_id)
   (15, 30)
   `;
 
-  connection.connect();
+connection.connect();
 
-  execQuery(createAuthorsResearchTable);
-  execQuery(research_papers_insert);
-  execQuery(INSERT_INTO_JOINT_TABLE);
+execQuery(create_Authors_Research_Table);
+execQuery(research_papers_insert);
+execQuery(Insert_Into_Joint_Table);
 
-  connection.end();
+connection.end();

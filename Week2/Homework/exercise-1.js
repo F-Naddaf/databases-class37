@@ -16,7 +16,7 @@ const createAuthorsTable = `CREATE TABLE authors(
   university VARCHAR(100) NOT NULL,
   date_of_birth DATE,
   h_index INT,
-  gender VARCHAR(50)
+  gender enum('F', 'M')
 );`;
 
 const addingMentor = `ALTER TABLE authors
